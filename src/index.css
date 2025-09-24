@@ -1,1 +1,21 @@
- 
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+html, body {
+  height: 100%;
+}
+
+.nav-menu {
+  list-style-type: none;
+  
+  li {
+    cursor: pointer;
+  }
+  
+  li:hover {
+    text-decoration: double underline;
+    text-underline-offset: 0.2rem;
+    color: #d06718;
+    font-weight: bold;
+  }
+}
