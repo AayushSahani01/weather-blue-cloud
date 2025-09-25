@@ -3,20 +3,26 @@ import { useState } from "react";
 
 const  SearchBar = ({ onSearch }) =>  {
   const [input, setInput] = useState("");
+// const handleSearch = () => {
+//     if (!query.trim()) return;
 
   return (
-    <div className="flex gap-2 justify-center mt-8 pb-6">
+    <div className="flex gap-4 justify-center mt-8 pb-6">
       <input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter city name"
-        className="border focus:border-orange-700 outline-none p-3 font-semibold text-amber-700 border-gray-300 rounded-md shadow-lg focus:shadow-xl focus:outline-none active:border-amber-600 w-64"
+        placeholder="Enter your city name ..."
+        className="p-3 font-semibold rounded-md shadow-xl w-3/4 hover:border-b-4 border-gray-700 outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500"
         required={true}
+            autoFocus={true}
         />
       <button
-        onClick={() => onSearch(input)}
-        className="bg-orange-500 font-bold text-sm text-white px-4 py-2 cursor-pointer rounded-lg hover:bg-orange-600 hover:scale-[1.06] shadow-lg transition duration-300 ease-in-out"
+        onClick={() => onSearch(input)
+
+        }
+        className="bg-sky-500 w-fit font-semibold text-md text-white px-6 py-1 cursor-pointer  rounded-md hover:bg-blue-600 hover:scale-[1.04] shadow-lg transition duration-300 ease-in-out
+        focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500"
       >
         Search
 

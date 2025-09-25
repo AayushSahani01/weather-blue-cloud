@@ -15,7 +15,7 @@ const MapPage = ({ lat, lon, onMapClick }) => {
   }
 
   return (
-    <MapContainer center={[lat, lon]} zoom={8} className="h-96 w-full rounded-lg">
+    <MapContainer center={[lat, lon]} zoom={10} className="h-[60vh] w-1/2 mx-auto">
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />

@@ -3,7 +3,8 @@ import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
 import MapPage from "./components/MapPage";
-import axios from 'axios';
+import Footer from "./components/Footer";
+// import WeatherNews from "./components/WeatherNews";
 
 function App() {
   const [city, setCity] = useState("Delhi");
@@ -54,18 +55,21 @@ function App() {
 
   const handleMapClick = (lat, lon) => {
     setCoords({ lat, lon });
-    fetchWeather(lat, lon, `Lat: ${lat.toFixed(2)}, Lon: ${lon.toFixed(2)}`);
+    fetchWeather(lat, lon, `Latitude : ${lat.toFixed(2)}, Longitude : ${lon.toFixed(2)}`);
   };
 
   return (
-    <div className="h-screen w-full p-0.5">
+    <div className="bg-slate-300 h-screen w-full pt-12 p-0.5">
       <Header />
       <SearchBar onSearch={handleSearch} />
-      <div className="mt-8 pb-6">
+      <div className="flex items-center w-full md:flex-row flex-col gap-x-4 mx-auto max-w-full px-4 py-8 justify-between">
+    
         <WeatherCard city={city} weatherData={weatherData} />
-      </div>
         <MapPage lat={coords.lat} lon={coords.lon} onMapClick={handleMapClick}  />
     </div>
+    <div className="text-center"><Footer /></div>
+    {/* <WeatherNews /> */}
+      </div>
   );
 }
 
