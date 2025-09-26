@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-300 h-screen w-full pt-12 p-0.5">
+    <div className="h-screen w-full pt-12 p-0.5">
       <Header />
       <SearchBar onSearch={handleSearch} />
       <div className="flex items-center w-full md:flex-row flex-col gap-x-4 mx-auto max-w-full px-4 py-8 justify-between">
