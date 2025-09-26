@@ -1,5 +1,7 @@
 import React from "react";
 import Theme from "./Theme";
+import WeatherCard  from "./WeatherCard";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -21,10 +23,14 @@ export default function Header() {
               <h3 className="text-md font-medium ">Home</h3>
             </li>
             <li>
-              <h3 className="text-md font-medium ">Weather News</h3>
+              <Link to="/news" className="text-md font-medium ">
+                 Weather News
+              </Link>
             </li>
             <li>
-              <h3 className="text-md font-medium ">Favorites</h3>
+              <Link to="/favourites" className="text-md font-medium ">
+                Favourites
+              </Link>
             </li>
             <li>
               <h3 className="text-md font-medium ">Alert</h3>
