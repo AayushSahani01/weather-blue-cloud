@@ -12,7 +12,7 @@ const Page404 = () => {
   return (
     <div className="h-screen">
       <div className={`relative text-center z-10 pt-[20vh] ${isVisible ? "animate-fade-in" : ""}`}>
-        <h1 className="text-3xl md:text-5xl lg:text-7xl xl:text-9xl font-black mb-4 animate-pulse">
+        <h1 className="text-3xl text-red-400 md:text-5xl lg:text-7xl xl:text-9xl font-black mb-4 animate-pulse">
           Error <span className="inline-block animate-bounce delay-100">4</span>
           <span className="inline-block animate-bounce delay-200">0</span>
           <span className="inline-block animate-bounce delay-300">4</span>
