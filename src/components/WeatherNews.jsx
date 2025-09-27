@@ -8,8 +8,10 @@ const WeatherNews = () => {
 
   useEffect(() => {
     fetch("https://newsapi.org/v2/everything?q=apple&from=2025-09-25&to=2025-09-25&sortBy=popularity&apiKey=19e0d9a94cfd49dc9d68430fb5255840", {
-      limit: 10,
-      method: "GET",
+      
+        method: 'GET',
+        
+
     })
       .then((res) => res.json())
       .then((data) => {

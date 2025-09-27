@@ -20,7 +20,9 @@ export default function Header() {
           </div>
           <div className="nav-menu hidden md:flex justify-end items-center px-10 space-x-12 w-full">
             <li>
-              <h3 className="text-md font-medium ">Home</h3>
+              <Link to="/" className="text-md font-medium ">
+                 Home
+              </Link>
             </li>
             <li>
               <Link to="/news" className="text-md font-medium ">
@@ -33,7 +35,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <h3 className="text-md font-medium ">Alert</h3>
+              <Link to="/alerts" className="text-md font-medium ">
+                Alerts
+              </Link>
             </li>
             <li>
               <Theme />
