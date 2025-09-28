@@ -1,16 +1,97 @@
-# React + Vite
+# Weather-blue-cloud
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with Vite that displays weather information and weather news. Features include location search, interactive map, and more.
 
-Currently, two official plugins are available:
+===================================
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 🌤 **Weather Info:** Get current weather for Hyderabad or any searched city.
+- 📰 **Weather News:** Fetches and displays popular weather-related news articles.
+- 📍 **Interactive Map:** View and select locations using Leaflet maps.
+- 🔍 **Search:** Search for any city and clear the search box after searching.
+- ⚡ **Fast Development:** Powered by Vite for instant HMR and fast builds.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+--- 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+---
+
+```
+git clone https://github.com/yourusername/weather-news.git
+
+```
+```bash
+cd weather-news
+npm install
+```
+
+### Running the App
+
+---
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+----
+
+## Usage
+
+- **Search for a city:** Type a city name and press Enter or click Search.
+- **View weather:** Weather info updates for the searched city.
+- **Browse news:** Limited news articles are shown; click "Load More" for more.
+- **Map:** Click on the map to select a location.
+
+----
+
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [React Leaflet](https://react-leaflet.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [NewsAPI](https://newsapi.org/) (for news data)
+- [OpenWeatherMap](https://openweathermap.org/) (for weather data)
+
+--- 
+
+## Project Structure
+
+```
+src/
+  components/
+    MapPage.jsx
+    SearchBar.jsx
+    WeatherNews.jsx
+  App.jsx
+  main.jsx
+```
+
+---
+
+## Customization
+
+- Update API keys in components as needed.
+- Change default city or map location in `MapPage.jsx`.
+
+
+--- 
+
+## License
+
+---
+ 
+  
